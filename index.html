@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Room,rent,Roommate,Apartment,Studio,House, roommate wanted.</title>
+    <link href="assets/css/bootstrap.css" rel="stylesheet">
+    <link href="assets/css/font-awesome.css" rel="stylesheet">
+    <link href="assets/css/custom.css" rel="stylesheet">
+	<link rel="icon" href="assets/img/favicon.ico" type="image/x-icon"/>
+	<style>
+	#particle-canvas{
+	position:fixed;
+	top:0px;
+	left:0px;
+	float:none;
+	width:100%;
+	height:auto
+	}
+	canvas{
+	position:absolute ! important;
+	top:0px;
+	left:0px
+	}
+	body{
+	min-height:100%;
+	height:auto;
+	z-index:1
+	}
+	.container{
+	z-index:99999;
+	padding:5%
+	}
+	</style>
+  </head>
+  <body  id="particle-canvas">
+
+    <div class="container" >
+      <div class="row">
+        
+      <div class="col-md-12">
+          <a href="https://goo.gl/zvhuAV" onmouseover="title='Home'"><img src="assets/img/get.png" class="logo" /></a>
+        </div>
+      
+        <div class="col-md-2 col-md-offset-1">
+          <a href="https://goo.gl/zvhuAV" onmouseover="title='Home'">
+            <div class="panel panel-extra">
+              <div class="panel-body">
+                <p><i class="fa fa-home"></i></p>
+              </div>
+            </div>
+          </a>
+        </div>
+        <div class="col-md-2">
+          <a href="https://goo.gl/zvhuAV" onmouseover="title='Search'">
+            <div class="panel panel-extra">
+              <div class="panel-body">
+                <p><i class="fa fa-search"></i></p>
+				
+              </div>
+            </div>
+          </a>
+        </div>
+        <div class="col-md-2">
+          <a href="https://goo.gl/zvhuAV" onmouseover="title='Login with facebook'">
+            <div class="panel panel-extra">
+              <div class="panel-body">
+                <p><i class="fa fa-facebook-official"></i></p>
+              </div>
+            </div>
+          </a>
+        </div>
+        <div class="col-md-2">
+          <a href="https://goo.gl/zvhuAV" onmouseover="title='Looking for rooms'">
+            <div class="panel panel-extra">
+              <div class="panel-body">
+                <p><i class="fa fa-comments-o"></i>
+</p>
+              </div>
+            </div>
+          </a>
+        </div> <div class="col-md-2">
+          <a href="https://goo.gl/zvhuAV" onmouseover="title='Sign Up '">
+            <div class="panel panel-extra">
+              <div class="panel-body">
+                <p><i class="fa fa-sign-in"></i></p>
+              </div>
+            </div>
+          </a>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-8  " style="float:none;margin:auto">
+          <div class="panel panel-status" onMouseOver="SelectText('serv');">
+            <div class="panel-body">
+              <p><span style="font-family:verdana,geneva,sans-serif; font-size: 30px"><span style="color:#FFFFFF;">Find a </span> <strong><span style="color:#FF0000;">new </span> <span style="color:#FFFFFF;">home</span></strong></span></p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+	 
+    <script src="assets/js/jquery.js"></script>
+    <script src="assets/js/custom.js"></script>
+    <script src="assets/js/bootstrap.js"></script>
+    <script>
+	// Initialisation
+
+var canvasDiv = document.getElementById('particle-canvas');
+var options = {
+  particleColor: '#888',
+  background: 'asset/img/bg.png',
+  interactive: true,
+  speed: 'medium',
+  density: 'high'
+};
+var particleCanvas = new ParticleNetwork(canvasDiv, options);
+	
+	</script>
+  </body>
+</html>
